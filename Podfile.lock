@@ -1,0 +1,43 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - NHAlignmentFlowLayout (0.1.0)
+  - ReCaptcha (1.0.1):
+    - ReCaptcha/Core (= 1.0.1)
+  - ReCaptcha/Core (1.0.1):
+    - Result (~> 3.0)
+  - Result (3.2.4)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.6)
+  - NHAlignmentFlowLayout
+  - ReCaptcha
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  NHAlignmentFlowLayout: 7f7e9bd79774a7c733e7ac232f2a131a0ce095b9
+  ReCaptcha: 495b10659cd85206d723d52911e873f032bc21d9
+  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+
+PODFILE CHECKSUM: d93b892d9e2c5c3a0cea1a69408fafc669e9b6e9
+
+COCOAPODS: 1.4.0

@@ -1,0 +1,10 @@
+/* 
+  Localization.strings
+  Janeous
+
+  Created by singsys on 16/02/18.
+  
+*/
+"Welcome" = "Welcome";
+"CREATE ACCOUNT" = "CREATE ACCOUNT";
+"SIGN IN WITH EMAIL" = "SIGN IN WITH EMAIL";

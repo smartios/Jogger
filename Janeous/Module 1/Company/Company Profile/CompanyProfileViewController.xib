@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CompanyProfileViewController" customModule="Janeous" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="p1b-YU-4Lm" id="LQc-Uf-PXM"/>
+                <outlet property="scrollView" destination="Wx2-N5-fGP" id="UPl-GA-wq1"/>
+                <outlet property="tableView1" destination="1YR-e6-RGU" id="lcF-yv-s8q"/>
+                <outlet property="tableView2" destination="RIy-nW-KCu" id="4m3-w5-1Wv"/>
+                <outlet property="tableView3" destination="Tsh-2g-k8z" id="jXz-r1-jjw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" tag="1" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="p1b-YU-4Lm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="1CJ-QS-KBS"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="nGN-fY-HJ2">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0kR-nB-uCD"/>
+                        <outlet property="delegate" destination="-1" id="JhI-Jh-GX2"/>
+                    </connections>
+                </collectionView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wx2-N5-fGP">
+                    <rect key="frame" x="0.0" y="40" width="375" height="627"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" tag="3" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1YR-e6-RGU">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="627"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="5kM-Wu-9RM"/>
+                                <outlet property="delegate" destination="-1" id="qQM-VR-UTE"/>
+                            </connections>
+                        </tableView>
+                        <tableView clipsSubviews="YES" tag="4" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RIy-nW-KCu">
+                            <rect key="frame" x="375" y="0.0" width="375" height="627"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Ptr-A7-A2S"/>
+                                <outlet property="delegate" destination="-1" id="P4L-5p-CE3"/>
+                            </connections>
+                        </tableView>
+                        <tableView clipsSubviews="YES" tag="5" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Tsh-2g-k8z">
+                            <rect key="frame" x="750" y="0.0" width="375" height="627"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="hL9-qW-bvE"/>
+                                <outlet property="delegate" destination="-1" id="rmB-IR-eQp"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="RIy-nW-KCu" firstAttribute="bottom" secondItem="1YR-e6-RGU" secondAttribute="bottom" id="1iJ-Ga-VGG"/>
+                        <constraint firstItem="Tsh-2g-k8z" firstAttribute="leading" secondItem="RIy-nW-KCu" secondAttribute="trailing" id="6aX-mL-4Hm"/>
+                        <constraint firstItem="RIy-nW-KCu" firstAttribute="centerY" secondItem="1YR-e6-RGU" secondAttribute="centerY" id="9n9-4L-QEs"/>
+                        <constraint firstItem="Tsh-2g-k8z" firstAttribute="centerY" secondItem="RIy-nW-KCu" secondAttribute="centerY" id="Dra-hr-hwh"/>
+                        <constraint firstItem="Tsh-2g-k8z" firstAttribute="height" secondItem="RIy-nW-KCu" secondAttribute="height" id="FAb-UL-PIL"/>
+                        <constraint firstItem="RIy-nW-KCu" firstAttribute="leading" secondItem="1YR-e6-RGU" secondAttribute="trailing" id="FJf-eW-38N"/>
+                        <constraint firstAttribute="bottom" secondItem="1YR-e6-RGU" secondAttribute="bottom" id="GAF-w5-NcH"/>
+                        <constraint firstItem="RIy-nW-KCu" firstAttribute="width" secondItem="1YR-e6-RGU" secondAttribute="width" id="GbS-vi-D2N"/>
+                        <constraint firstItem="1YR-e6-RGU" firstAttribute="top" secondItem="Wx2-N5-fGP" secondAttribute="top" id="OVX-7V-83Z"/>
+                        <constraint firstItem="1YR-e6-RGU" firstAttribute="height" secondItem="Wx2-N5-fGP" secondAttribute="height" id="THp-wc-5ss"/>
+                        <constraint firstItem="1YR-e6-RGU" firstAttribute="centerX" secondItem="Wx2-N5-fGP" secondAttribute="centerX" id="UaN-dM-piQ"/>
+                        <constraint firstItem="Tsh-2g-k8z" firstAttribute="bottom" secondItem="RIy-nW-KCu" secondAttribute="bottom" id="aD4-2T-uVu"/>
+                        <constraint firstItem="Tsh-2g-k8z" firstAttribute="top" secondItem="RIy-nW-KCu" secondAttribute="top" id="fdu-QE-Kik"/>
+                        <constraint firstItem="RIy-nW-KCu" firstAttribute="top" secondItem="1YR-e6-RGU" secondAttribute="top" id="feE-yo-QiG"/>
+                        <constraint firstItem="1YR-e6-RGU" firstAttribute="width" secondItem="Wx2-N5-fGP" secondAttribute="width" id="p3E-9H-eau"/>
+                        <constraint firstItem="Tsh-2g-k8z" firstAttribute="width" secondItem="RIy-nW-KCu" secondAttribute="width" id="tbQ-Q1-431"/>
+                        <constraint firstItem="RIy-nW-KCu" firstAttribute="height" secondItem="1YR-e6-RGU" secondAttribute="height" id="wPw-hD-ejn"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Wx2-N5-fGP" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="84b-bg-CFB"/>
+                <constraint firstItem="p1b-YU-4Lm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Kis-2T-uUK"/>
+                <constraint firstItem="Wx2-N5-fGP" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Kyx-d0-Nfi"/>
+                <constraint firstItem="Wx2-N5-fGP" firstAttribute="top" secondItem="p1b-YU-4Lm" secondAttribute="bottom" id="RFr-wQ-Pvc"/>
+                <constraint firstItem="Wx2-N5-fGP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Tth-G9-DKy"/>
+                <constraint firstItem="p1b-YU-4Lm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vdu-8t-nnh"/>
+                <constraint firstItem="p1b-YU-4Lm" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="eFs-AO-VWG"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="39.5" y="89.5"/>
+        </view>
+    </objects>
+</document>

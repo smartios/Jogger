@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Regular.ttf">
+            <string>FiraSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddGeneralInfoControllerViewController" customModule="Janeous" customModuleProvider="target">
+            <connections>
+                <outlet property="aboutYouCell" destination="Efa-Uw-Rov" id="cCS-n2-RdI"/>
+                <outlet property="userImageCell" destination="qTV-mu-4Fz" id="qF5-et-EWh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userImageCell" rowHeight="206" id="qTV-mu-4Fz">
+            <rect key="frame" x="0.0" y="0.0" width="377" height="206"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qTV-mu-4Fz" id="MT7-48-KuG">
+                <rect key="frame" x="0.0" y="0.0" width="377" height="205.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="user_icon" translatesAutoresizingMaskIntoConstraints="NO" id="5EE-UU-sey">
+                        <rect key="frame" x="113" y="26" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="CGu-fx-eSe"/>
+                            <constraint firstAttribute="height" constant="150" id="OOi-34-CH2"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5EE-UU-sey" firstAttribute="centerX" secondItem="MT7-48-KuG" secondAttribute="centerX" id="0Qk-RJ-25A"/>
+                    <constraint firstAttribute="bottom" secondItem="5EE-UU-sey" secondAttribute="bottom" constant="29.5" id="Eyl-qW-StB"/>
+                    <constraint firstItem="5EE-UU-sey" firstAttribute="top" secondItem="MT7-48-KuG" secondAttribute="top" constant="26" id="Pwq-Te-lM8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-162" y="-216"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="aboutYouCell" rowHeight="130" id="Efa-Uw-Rov">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Efa-Uw-Rov" id="2ra-lw-Cbt">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMM-wz-BEZ">
+                        <rect key="frame" x="25" y="10" width="326" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="ihx-nm-5BI"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FiraSans-Regular" family="Fira Sans" pointSize="15"/>
+                        <color key="textColor" red="0.62745098040000002" green="0.67450980390000004" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1e9-Yz-DGk">
+                        <rect key="frame" x="26" y="108" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.83529411760000005" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="mcz-mY-j5n"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" text="Dummy" translatesAutoresizingMaskIntoConstraints="NO" id="cAa-ff-7Qh">
+                        <rect key="frame" x="25" y="39" width="326" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="nI3-hr-HJZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cAa-ff-7Qh" secondAttribute="trailing" constant="25" id="0C8-aP-EoH"/>
+                    <constraint firstItem="1e9-Yz-DGk" firstAttribute="top" secondItem="cAa-ff-7Qh" secondAttribute="bottom" constant="8" id="3Ik-6S-A5a"/>
+                    <constraint firstItem="cAa-ff-7Qh" firstAttribute="top" secondItem="wMM-wz-BEZ" secondAttribute="bottom" constant="8" id="B9S-7x-teC"/>
+                    <constraint firstAttribute="trailing" secondItem="1e9-Yz-DGk" secondAttribute="trailing" constant="26" id="Cb1-9k-uAU"/>
+                    <constraint firstItem="1e9-Yz-DGk" firstAttribute="leading" secondItem="2ra-lw-Cbt" secondAttribute="leading" constant="26" id="Rol-4i-By6"/>
+                    <constraint firstItem="wMM-wz-BEZ" firstAttribute="leading" secondItem="2ra-lw-Cbt" secondAttribute="leading" constant="25" id="SwJ-Op-6hs"/>
+                    <constraint firstAttribute="bottom" secondItem="1e9-Yz-DGk" secondAttribute="bottom" constant="8.5" id="XdC-FM-r7i"/>
+                    <constraint firstItem="cAa-ff-7Qh" firstAttribute="leading" secondItem="2ra-lw-Cbt" secondAttribute="leading" constant="25" id="gyK-Gm-OvY"/>
+                    <constraint firstAttribute="trailing" secondItem="wMM-wz-BEZ" secondAttribute="trailing" constant="25" id="lU6-2W-Ha1"/>
+                    <constraint firstItem="wMM-wz-BEZ" firstAttribute="top" secondItem="2ra-lw-Cbt" secondAttribute="top" constant="10" id="q9z-Hf-DMC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="uI3-kz-VLz"/>
+            <point key="canvasLocation" x="-146" y="199"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="user_icon" width="127" height="127"/>
+    </resources>
+</document>

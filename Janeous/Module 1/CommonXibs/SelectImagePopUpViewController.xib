@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Light.ttf">
+            <string>FiraSans-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectImagePopUpViewController" customModule="Janeous" customModuleProvider="target">
+            <connections>
+                <outlet property="cameraButton" destination="GjN-13-yoQ" id="JPg-DL-muQ"/>
+                <outlet property="galleryButton" destination="A72-Qr-8QQ" id="ntY-fr-aRV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q6g-lW-1fi">
+                    <rect key="frame" x="25" y="211" width="325" height="240"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QgH-CK-rVR">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="60"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Image" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTp-Xn-unw">
+                                    <rect key="frame" x="8" y="15" width="254" height="30"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="1o0-Kq-eSI"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="FiraSans-Light" family="Fira Sans" pointSize="25"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHN-4q-Oe1">
+                                    <rect key="frame" x="270" y="10" width="47" height="40"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="U8m-3p-4oC"/>
+                                        <constraint firstAttribute="width" constant="47" id="aGM-bT-KpK"/>
+                                    </constraints>
+                                    <state key="normal" image="cross_black"/>
+                                    <connections>
+                                        <action selector="cancelButtonClickedWithSender:" destination="-1" eventType="touchUpInside" id="Zdm-Tw-Qeg"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" red="0.96470588235294119" green="0.96862745098039216" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="lTp-Xn-unw" firstAttribute="top" secondItem="QgH-CK-rVR" secondAttribute="top" constant="15" id="9Ol-EC-Ang"/>
+                                <constraint firstItem="nHN-4q-Oe1" firstAttribute="leading" secondItem="lTp-Xn-unw" secondAttribute="trailing" constant="8" id="Dml-W4-drx"/>
+                                <constraint firstItem="lTp-Xn-unw" firstAttribute="leading" secondItem="QgH-CK-rVR" secondAttribute="leading" constant="8" id="QHN-WS-f51"/>
+                                <constraint firstAttribute="height" constant="60" id="qZT-zK-Wnr"/>
+                                <constraint firstAttribute="trailing" secondItem="nHN-4q-Oe1" secondAttribute="trailing" constant="8" id="qej-VW-IVM"/>
+                                <constraint firstItem="nHN-4q-Oe1" firstAttribute="top" secondItem="QgH-CK-rVR" secondAttribute="top" constant="10" id="to2-Qy-qWN"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjN-13-yoQ">
+                            <rect key="frame" x="10" y="85" width="140" height="130"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="2uy-3U-wpd"/>
+                                <constraint firstAttribute="height" constant="130" id="ocN-Z7-1Id"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="-45" minY="65" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="45" minY="0.0" maxX="0.0" maxY="25"/>
+                            <state key="normal" title="Take a Photo" image="TakePhoto">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="sourceButtonClickedWithSender:" destination="-1" eventType="touchUpInside" id="Ewn-y3-qxX"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A72-Qr-8QQ">
+                            <rect key="frame" x="175" y="85" width="140" height="130"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="140" id="R26-vp-smm"/>
+                                <constraint firstAttribute="height" constant="130" id="byl-Pn-uQb"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <inset key="titleEdgeInsets" minX="-45" minY="65" maxX="0.0" maxY="0.0"/>
+                            <inset key="imageEdgeInsets" minX="45" minY="0.0" maxX="0.0" maxY="25"/>
+                            <state key="normal" title="Choose from library" image="ChooseLibrary">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="sourceButtonClickedWithSender:" destination="-1" eventType="touchUpInside" id="jga-RX-M1t"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-k5-vNp">
+                            <rect key="frame" x="162" y="85" width="1" height="132"/>
+                            <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="I5D-k2-MeR"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="eA9-k5-vNp" firstAttribute="top" secondItem="q6g-lW-1fi" secondAttribute="top" constant="85" id="7JU-V4-H0q"/>
+                        <constraint firstAttribute="height" constant="240" id="B0l-Th-afH"/>
+                        <constraint firstItem="GjN-13-yoQ" firstAttribute="top" secondItem="QgH-CK-rVR" secondAttribute="bottom" constant="25" id="CfY-lt-tbF"/>
+                        <constraint firstItem="eA9-k5-vNp" firstAttribute="centerX" secondItem="q6g-lW-1fi" secondAttribute="centerX" id="FvB-Ib-H43"/>
+                        <constraint firstAttribute="trailing" secondItem="QgH-CK-rVR" secondAttribute="trailing" id="Kod-1C-2yX"/>
+                        <constraint firstItem="QgH-CK-rVR" firstAttribute="top" secondItem="q6g-lW-1fi" secondAttribute="top" id="L3D-UE-pKi"/>
+                        <constraint firstItem="eA9-k5-vNp" firstAttribute="leading" secondItem="GjN-13-yoQ" secondAttribute="trailing" constant="12" id="R6y-40-UdN"/>
+                        <constraint firstItem="QgH-CK-rVR" firstAttribute="leading" secondItem="q6g-lW-1fi" secondAttribute="leading" id="WAF-R5-KvA"/>
+                        <constraint firstItem="A72-Qr-8QQ" firstAttribute="top" secondItem="QgH-CK-rVR" secondAttribute="bottom" constant="25" id="XqW-dC-DCl"/>
+                        <constraint firstAttribute="bottom" secondItem="eA9-k5-vNp" secondAttribute="bottom" constant="23" id="aGn-PO-cl6"/>
+                        <constraint firstItem="A72-Qr-8QQ" firstAttribute="leading" secondItem="eA9-k5-vNp" secondAttribute="trailing" constant="12" id="we7-rq-Enb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.050000000000000003" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="q6g-lW-1fi" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="2Mq-Gf-5g7"/>
+                <constraint firstItem="q6g-lW-1fi" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" constant="-12.5" id="2NM-wH-5Z2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="q6g-lW-1fi" secondAttribute="trailing" constant="25" id="DyT-Ld-NSv"/>
+                <constraint firstItem="q6g-lW-1fi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="Fjc-vI-Sun"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="48.5" y="89.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ChooseLibrary" width="36" height="36"/>
+        <image name="TakePhoto" width="42" height="36"/>
+        <image name="cross_black" width="14" height="14"/>
+    </resources>
+</document>

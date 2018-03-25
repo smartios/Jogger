@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ProfileHeaderView" customModule="Janeous" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDL-Ph-HeG">
+                    <rect key="frame" x="15" y="0.0" width="155" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="qFY-Z4-7Jb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vf9-Yb-Oar">
+                    <rect key="frame" x="260" y="0.0" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="1t8-Fr-13F"/>
+                        <constraint firstAttribute="width" constant="45" id="df3-vX-nbv"/>
+                    </constraints>
+                    <state key="normal" image="add_icon"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tx-dh-agv">
+                    <rect key="frame" x="215" y="0.0" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="deD-Hp-TUy"/>
+                        <constraint firstAttribute="width" constant="45" id="hk3-wa-jjE"/>
+                    </constraints>
+                    <state key="normal" image="Edit"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3MB-Ga-fOM">
+                    <rect key="frame" x="170" y="0.0" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="LEZ-qb-KMS"/>
+                        <constraint firstAttribute="width" constant="45" id="Q3s-T3-aZc"/>
+                    </constraints>
+                    <state key="normal" image="share_icon"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZDL-Ph-HeG" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="1UY-he-iqe"/>
+                <constraint firstItem="vf9-Yb-Oar" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="2TT-G6-DD9"/>
+                <constraint firstItem="4tx-dh-agv" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="32A-jq-qwb"/>
+                <constraint firstItem="vf9-Yb-Oar" firstAttribute="leading" secondItem="4tx-dh-agv" secondAttribute="trailing" id="97P-up-bYP"/>
+                <constraint firstItem="3MB-Ga-fOM" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="D32-lM-Qxk"/>
+                <constraint firstItem="ZDL-Ph-HeG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="DaU-1X-rt9"/>
+                <constraint firstItem="4tx-dh-agv" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="GnZ-Aa-muz"/>
+                <constraint firstItem="3MB-Ga-fOM" firstAttribute="leading" secondItem="ZDL-Ph-HeG" secondAttribute="trailing" id="Gx6-6w-4Xc"/>
+                <constraint firstItem="vf9-Yb-Oar" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Hz5-Ka-hfs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vf9-Yb-Oar" secondAttribute="trailing" constant="15" id="QTq-aB-AWS"/>
+                <constraint firstItem="4tx-dh-agv" firstAttribute="leading" secondItem="3MB-Ga-fOM" secondAttribute="trailing" id="dsu-KH-uKI"/>
+                <constraint firstItem="ZDL-Ph-HeG" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="eHV-zX-Nkw"/>
+                <constraint firstItem="3MB-Ga-fOM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nHW-5f-Tfx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="addMoreButton" destination="vf9-Yb-Oar" id="6UV-0r-9wM"/>
+                <outlet property="addMoreButtonWidthConstant" destination="df3-vX-nbv" id="Sna-bD-pjb"/>
+                <outlet property="editButton" destination="4tx-dh-agv" id="tiI-fw-Ggb"/>
+                <outlet property="editButtonWidthConstant" destination="hk3-wa-jjE" id="8Wf-Eq-qfC"/>
+                <outlet property="headerLabel" destination="ZDL-Ph-HeG" id="14f-4A-ggH"/>
+                <outlet property="privacyButton" destination="3MB-Ga-fOM" id="cSH-eP-eVR"/>
+                <outlet property="privacyButtonWidthConstant" destination="Q3s-T3-aZc" id="g9Q-xm-ivW"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-191.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Edit" width="19" height="19"/>
+        <image name="add_icon" width="24" height="24"/>
+        <image name="share_icon" width="23" height="17"/>
+    </resources>
+</document>

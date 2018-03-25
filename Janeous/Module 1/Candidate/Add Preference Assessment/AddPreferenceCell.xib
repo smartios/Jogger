@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Medium.ttf">
+            <string>FiraSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddPreferenceControllerViewController" customModule="Janeous" customModuleProvider="target">
+            <connections>
+                <outlet property="assessmentBtnCell" destination="a6V-dd-Yib" id="F4z-S9-g1E"/>
+                <outlet property="preferenceTitleCell" destination="nV6-ri-F38" id="Zc5-Uf-GGK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="preferenceTitleCell" rowHeight="166" id="nV6-ri-F38">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nV6-ri-F38" id="SJX-gJ-wzR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="preference Assessmet" translatesAutoresizingMaskIntoConstraints="NO" id="9X8-8G-tk0">
+                        <rect key="frame" x="30" y="15" width="68" height="64"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="64" id="1pK-4Y-nRM"/>
+                            <constraint firstAttribute="width" constant="68" id="XZ5-dd-Jqg"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0oH-s7-m7I">
+                        <rect key="frame" x="30" y="94" width="229" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpn-rg-wCf">
+                        <rect key="frame" x="30" y="123" width="315" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9X8-8G-tk0" firstAttribute="leading" secondItem="SJX-gJ-wzR" secondAttribute="leading" constant="30" id="4Y3-Ub-K4w"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Rpn-rg-wCf" secondAttribute="trailing" constant="14" id="7Xp-ch-QTU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0oH-s7-m7I" secondAttribute="trailing" constant="100" id="815-yB-qlD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Rpn-rg-wCf" secondAttribute="bottom" constant="11" id="IWh-F5-Xmq"/>
+                    <constraint firstItem="9X8-8G-tk0" firstAttribute="top" secondItem="SJX-gJ-wzR" secondAttribute="top" constant="15" id="P8p-8q-QiH"/>
+                    <constraint firstItem="0oH-s7-m7I" firstAttribute="leading" secondItem="SJX-gJ-wzR" secondAttribute="leadingMargin" constant="14" id="RVA-uI-euX"/>
+                    <constraint firstItem="0oH-s7-m7I" firstAttribute="top" secondItem="9X8-8G-tk0" secondAttribute="bottom" constant="15" id="TbY-VM-hZS"/>
+                    <constraint firstItem="Rpn-rg-wCf" firstAttribute="top" secondItem="0oH-s7-m7I" secondAttribute="bottom" constant="8" id="yno-Hi-Qs3"/>
+                    <constraint firstItem="Rpn-rg-wCf" firstAttribute="leading" secondItem="SJX-gJ-wzR" secondAttribute="leadingMargin" constant="14" id="yrK-2v-kHT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="12.5" y="17"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="assessmentBtnCell" rowHeight="57" id="a6V-dd-Yib">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a6V-dd-Yib" id="HEQ-4R-wc9">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYB-eL-jLs" customClass="defaultGreenButton" customModule="Janeous" customModuleProvider="target">
+                        <rect key="frame" x="30" y="8" width="315" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Al6-Xl-g8g"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FiraSans-Medium" family="Fira Sans" pointSize="16"/>
+                        <state key="normal" title="start assessment">
+                            <color key="titleColor" red="1" green="0.59841579860000005" blue="0.21744791669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eYB-eL-jLs" firstAttribute="top" secondItem="HEQ-4R-wc9" secondAttribute="top" constant="8" id="5wu-Ph-ijc"/>
+                    <constraint firstItem="eYB-eL-jLs" firstAttribute="leading" secondItem="HEQ-4R-wc9" secondAttribute="leading" constant="30" id="UbL-8Z-YtV"/>
+                    <constraint firstAttribute="trailing" secondItem="eYB-eL-jLs" secondAttribute="trailing" constant="30" id="YLX-rV-B7h"/>
+                    <constraint firstAttribute="bottom" secondItem="eYB-eL-jLs" secondAttribute="bottom" constant="8" id="gGN-Uq-pje"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="10.5" y="193.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="preference Assessmet" width="67" height="64"/>
+    </resources>
+</document>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Regular.ttf">
+            <string>FiraSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddWorkExperienceController" customModule="Janeous" customModuleProvider="target">
+            <connections>
+                <outlet property="checkBoxCell" destination="fLr-1j-OoH" id="q8F-tO-Rqg"/>
+                <outlet property="jobDescriptionCell" destination="Vub-sz-Jna" id="Odl-vq-Aqe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkBoxCell" rowHeight="65" id="fLr-1j-OoH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fLr-1j-OoH" id="e4n-GW-pPU">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPv-pL-nuE">
+                        <rect key="frame" x="25" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="8wn-sE-a4D"/>
+                            <constraint firstAttribute="height" constant="40" id="bzM-TL-Qdq"/>
+                        </constraints>
+                        <state key="normal" image="checkbox_unselect"/>
+                        <state key="selected" image="checkbox_select"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ve-aq-2oa" customClass="DefaultTextTitleFormat" customModule="Janeous" customModuleProvider="target">
+                        <rect key="frame" x="57" y="10" width="292" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4ve-aq-2oa" secondAttribute="bottom" constant="10.5" id="BLl-3q-GF8"/>
+                    <constraint firstAttribute="trailing" secondItem="4ve-aq-2oa" secondAttribute="trailing" constant="26" id="N4H-hR-4nj"/>
+                    <constraint firstItem="lPv-pL-nuE" firstAttribute="top" secondItem="e4n-GW-pPU" secondAttribute="top" constant="10" id="X3Q-kt-thO"/>
+                    <constraint firstItem="lPv-pL-nuE" firstAttribute="leading" secondItem="e4n-GW-pPU" secondAttribute="leading" constant="25" id="Z9x-2P-4Gd"/>
+                    <constraint firstAttribute="bottom" secondItem="lPv-pL-nuE" secondAttribute="bottom" constant="9.5" id="b35-rR-NlK"/>
+                    <constraint firstItem="4ve-aq-2oa" firstAttribute="leading" secondItem="e4n-GW-pPU" secondAttribute="leading" constant="57" id="xVd-pp-IkY"/>
+                    <constraint firstItem="4ve-aq-2oa" firstAttribute="top" secondItem="e4n-GW-pPU" secondAttribute="top" constant="10" id="zRj-SH-7Td"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="-163.5" y="-202.5"/>
+        </tableViewCell>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="jobDetailsCell" rowHeight="130" id="Vub-sz-Jna" userLabel="jobDetailsCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Vub-sz-Jna" id="7uR-lJ-W7n">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OHe-kY-ZRf">
+                        <rect key="frame" x="25" y="10" width="326" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="fyg-qI-8D1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FiraSans-Regular" family="Fira Sans" pointSize="15"/>
+                        <color key="textColor" red="0.62745098040000002" green="0.67450980390000004" blue="0.75294117650000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fI4-hv-TPw">
+                        <rect key="frame" x="26" y="108" width="324" height="1"/>
+                        <color key="backgroundColor" red="0.81176470590000005" green="0.83529411760000005" blue="0.87450980389999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="eEg-fO-rnE"/>
+                        </constraints>
+                    </imageView>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" tag="2" contentMode="scaleToFill" text="Dummy" translatesAutoresizingMaskIntoConstraints="NO" id="EmL-CV-fXc">
+                        <rect key="frame" x="25" y="39" width="326" height="61"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="61" id="WAY-tg-gPr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="EmL-CV-fXc" firstAttribute="top" secondItem="OHe-kY-ZRf" secondAttribute="bottom" constant="8" id="Bc4-kV-cIv"/>
+                    <constraint firstItem="fI4-hv-TPw" firstAttribute="top" secondItem="EmL-CV-fXc" secondAttribute="bottom" constant="8" id="CFP-3P-LeJ"/>
+                    <constraint firstAttribute="trailing" secondItem="OHe-kY-ZRf" secondAttribute="trailing" constant="25" id="L5W-f2-sN7"/>
+                    <constraint firstItem="OHe-kY-ZRf" firstAttribute="top" secondItem="7uR-lJ-W7n" secondAttribute="top" constant="10" id="OLu-e3-S2d"/>
+                    <constraint firstAttribute="trailing" secondItem="EmL-CV-fXc" secondAttribute="trailing" constant="25" id="Puk-Tx-qt5"/>
+                    <constraint firstItem="fI4-hv-TPw" firstAttribute="leading" secondItem="7uR-lJ-W7n" secondAttribute="leading" constant="26" id="UYK-dM-Bct"/>
+                    <constraint firstItem="OHe-kY-ZRf" firstAttribute="leading" secondItem="7uR-lJ-W7n" secondAttribute="leading" constant="25" id="el2-fn-3lT"/>
+                    <constraint firstAttribute="trailing" secondItem="fI4-hv-TPw" secondAttribute="trailing" constant="26" id="fP2-cZ-JdB"/>
+                    <constraint firstItem="EmL-CV-fXc" firstAttribute="leading" secondItem="7uR-lJ-W7n" secondAttribute="leading" constant="25" id="fw2-VI-Z3P"/>
+                    <constraint firstAttribute="bottom" secondItem="fI4-hv-TPw" secondAttribute="bottom" constant="8.5" id="qKM-Xq-OoI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="O4C-Rz-QkY"/>
+            <point key="canvasLocation" x="-162" y="5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_select" width="20" height="20"/>
+        <image name="checkbox_unselect" width="20" height="20"/>
+    </resources>
+</document>

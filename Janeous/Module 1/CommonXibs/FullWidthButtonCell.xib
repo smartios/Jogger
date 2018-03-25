@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Medium.ttf">
+            <string>FiraSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BtnCell" rowHeight="57" id="AER-8U-gIW">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AER-8U-gIW" id="GSy-jC-muR">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="56.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8C-ZF-rXE" customClass="DefaultButtonFullGray" customModule="Janeous" customModuleProvider="target">
+                        <rect key="frame" x="25" y="8" width="325" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="CSw-rs-TEM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="FiraSans-Medium" family="Fira Sans" pointSize="16"/>
+                        <state key="normal" title="SAVE">
+                            <color key="titleColor" red="1" green="0.59841579860000005" blue="0.21744791669999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="B8C-ZF-rXE" secondAttribute="bottom" constant="8" id="Rtj-fc-OJM"/>
+                    <constraint firstItem="B8C-ZF-rXE" firstAttribute="leading" secondItem="GSy-jC-muR" secondAttribute="leading" constant="25" id="SWs-rU-d51"/>
+                    <constraint firstAttribute="trailing" secondItem="B8C-ZF-rXE" secondAttribute="trailing" constant="25" id="Uy9-9O-szT"/>
+                    <constraint firstItem="B8C-ZF-rXE" firstAttribute="top" secondItem="GSy-jC-muR" secondAttribute="top" constant="8" id="lhq-Kr-paM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="10.5" y="193.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,183 @@
+/* 
+  Localizable.strings
+  Janeous
+
+  Created by singsys on 16/02/18.
+  
+*/
+//MARK:- Validations
+"Please enter your email." = "Please enter your email.";
+"Please enter your company name." = "Please enter your company name.";
+"Please enter your location." = "Please enter your location.";
+"Please enter your first name." = "Please enter your first name.";
+"Please enter your last name." = "Please enter your last name.";
+"Please enter your mobile number." = "Please enter your mobile number.";
+"Please enter your password." = "Please enter your password.";
+"Please enter valid email." = "Please enter valid email.";
+"Please enter valid password." = "Please enter valid password.";
+"Please enter your email or mobile number." = "Please enter your email or mobile number.";
+"Please enter valid mobile number." = "Please enter valid mobile number.";
+"Please enter OTP." = "Please enter OTP.";
+
+
+//MARK:- Other strings
+"Welcome to Janeous" = "Welcome to Janeous";
+"CREATE ACCOUNT" = "CREATE ACCOUNT";
+"SIGN IN WITH EMAIL" = "SIGN IN WITH EMAIL";
+"SIGN IN WITH LINKEDIN" = "SIGN IN WITH LINKEDIN";
+"Sign In" = "Sign In";
+"New here? Create Account" = "New here? Create Account";
+"Create Account" = "Create Account";
+"Forgot Password?" = "Forgot Password?";
+"SIGN IN" = "SIGN IN";
+"Or Sign In Using" = "Or Sign In Using";
+"EMAIL/MOBILE NUMBER" = "EMAIL/MOBILE NUMBER";
+"PASSWORD" = "PASSWORD";
+"By using Janeous you accept and agree to the\nTerms of Service and Privacy Policy." = "By using Janeous you accept and agree to the\nTerms of Service and Privacy Policy.";
+"Terms of Servic" = "Terms of Servic";
+"Privacy Policy" = "Privacy Policy";
+"COMPANY NAME*" = "COMPANY NAME*";
+
+"Home" = "Home";
+"About" = "About";
+"Contact Us" = "Contact Us";
+"Terms & Conditions" = "Terms & Conditions";
+"Privacy Policy" = "Privacy Policy";
+"Dashboard" = "Dashboard";
+"Conferences" = "Conferences";
+"Jobs" = "Jobs";
+"My Interviews" = "My Interviews";
+"My Applications" = "My Applications";
+"Support" = "Support";
+"Logout" = "Logout";
+"Manage Jobs" = "Manage Jobs";
+"Manage Interviews" = "Manage Interviews";
+"My Company" = "My Company";
+"My Profile" = "My Profile";
+"Manage Tokens" = "Manage Tokens";
+"Reports" = "Reports";
+"Choose an account type and sign up" = "Choose an account type and sign up";
+"ACCOUNT TYPE" = "ACCOUNT TYPE";
+"FIRST NAME" = "FIRST NAME";
+"LAST NAME" = "LAST NAME";
+"MOBILE NUMBER" = "MOBILE NUMBER";
+"PERSONAL EMAIL ASDDRESS" = "PERSONAL EMAIL ASDDRESS";
+"COMPANY NAME" = "COMPANY NAME";
+"LOCATION" = "LOCATION";
+"WORK EMAIL ASDDRESS" = "WORK EMAIL ASDDRESS";
+"CANDIDATE" = "CANDIDATE";
+"COMPANY" = "COMPANY";
+"Select your account type" = "Select your account type";
+"By clicking `Create Account`, you agree to the\nTerms of Service and Privacy Policy." = "By clicking `Create Account`, you agree to the\nTerms of Service and Privacy Policy.";
+"We'll send instrutions to the registered \nemail or mobile number below" = "We'll send instrutions to the registered \nemail or mobile number below";
+"CONTINUE" = "CONTINUE";
+"Back to Sign In" = "Back to Sign In";
+"Enter OTP To Login" = "Enter OTP To Login";
+"One Time Password (OTP) has been sent to your \n" = "One Time Password (OTP) has been sent to your \n";
+", please enter the \nsame here to login" = ", please enter the \nsame here to login";
+"OTP" = "OTP";
+"Resend OTP" = "Resend OTP";
+"email" = "email";
+"mobile" = "mobile";
+//"+ADD MORE" = "+ADD MORE"
+
+//Reset Password Page
+"Didn't work? Resend Reset Password URL to my email" = "Didn't work? Resend Reset Password URL to my email";
+"RESET PASSWORD" = "RESET PASSWORD";
+"Type your new password" = "Type your new password";
+"NEW PASSWORD" = "NEW PASSWORD";
+"Minimum of 6 characters" = "Minimum of 6 characters";
+"RE-ENTER NEW PASSWORD" = "RE-ENTER NEW PASSWORD";
+
+
+"+ADD MORE" = "+ADD MORE";
+
+//candidate Profile page
+"Work Experience" = "Work Experience";
+"View Details" = "View Details";
+"JOB TAGS" = "JOB TAGS";
+"JOB FUNCTION" = "JOB FUNCTION";
+
+"WHICH COUNTRY CAN YOU WORK FROM?" = "WHICH COUNTRY CAN YOU WORK FROM?";
+"WILLINGNESS TO TRAVEL" = "WILLINGNESS TO TRAVEL";
+"PREFERENCES" = "PREFERENCES";
+"These companies are given priority when we are looking for matching jobs for you" = "These companies are given priority when we are looking for matching jobs for you";
+"Prefered Countries To Work In" = "Prefered Countries To Work In";
+"Your Prefered Companies" = "Your Prefered Companies";
+
+//Preference assessment add candidate
+
+"START ASSESSMENT" = "START ASSESSMENT";
+"Preference Assessment" = "Preference Assessment";
+"This preference assessment will assess your personal preferences,that is, how you like to work.\n\nIt is not concerenced with your typical resume skills,but how you see yourself relating to others,what type of enviornment you prefer to work,how you approch problems, and how you think you deal with feelings and emotions. With this type of assessment ,there is no right or wrong answers." = "This preference assessment will assess your personal preferences,that is, how you like to work.\n\nIt is not concerenced with your typical resume skills,but how you see yourself relating to others,what type of enviornment you prefer to work,how you approch problems, and how you think you deal with feelings and emotions. With this type of assessment ,there is no right or wrong answers.";
+
+//Add Certificate for candidate
+"CERTIFICATE NAME **" = "CERTIFICATE NAME **";
+"CERTIFYING AUTHORITY" = "CERTIFYING AUTHORITY";
+"DATE RECEIVED" = "DATE RECEIVED";
+"VALID TILL" = "VALID TILL";
+"SAVE AND ADD" = "SAVE AND ADD";
+
+//add general information candidate
+"Add General Information" = "Add General Information";
+"FIRST NAME*" = "FIRST NAME*";
+"LAST NAME*" = "LAST NAME*";
+"Enter text here..." = "Enter text here...";
+"ABOUT YOU" = "ABOUT YOU";
+"NATIONALITY* *" = "NATIONALITY* +";
+"COUNTRY OF RESIDENCE* *" = "COUNTRY OF RESIDENCE* +";
+"Please enter your nationality." = "Please enter your nationality.";
+"Please enter your country of residence." = "Please enter your country of residence.";
+"Enter text here." = "Enter text here.";
+
+//add workExperience candidate
+"DURATION" = "DURATION";
+"FROM" = "FROM";
+"DEGREE TITLE*" = "DEGREE TITLE*";
+"DEGREE LEVEL*" = "DEGREE LEVEL*";
+"Add Top Skills (max 6)" = "Add Top Skills (max 6)";
+"(max 6)" = "(max 6)";
+"Fill this section out as best you can so our algorithm can find you the best job in the market!" = "Fill this section out as best you can so our algorithm can find you the best job in the market!";
+//MARK:- Add zZ
+"Add Work Education (max 3)" = "Add Work Education (max 3)";
+"(max 3)" = "(max 3)";
+//MARK:- Exp
+"Add Work Experience (max 6)" = "Add Work Experience (max 6)";
+"Please enter your job title" = "Please enter your job title";
+"Please enter your experience level." = "Please enter your experience level.";
+"Enter job description here.." = "Enter job description here..";
+"CANCEL" = "CANCEL";
+"DONE" = "DONE";
+
+// Education
+"Add Education Experience (max 3)" = "Add Education Experience (max 3)";
+"(max 3)" = "(max 3)";
+
+//Add Cert
+"Add Certificate (max 3)" = "Add Certificate (max 3)";
+"Edit Certificate" = "Edit Certificate";
+
+//Add job titles
+"Desired Job Titles (max 3)" = "Desired Job Titles (max 3)";
+"JOB TITLES" = "JOB TITLES";
+"Select your job titles" = "Select your job titles";
+
+//Company Address
+"Edit Address Information" = "Edit Address Information";
+
+//Company user profile
+"User Profile" = "User Profile";
+"Associated Conferences" = "Associated Conferences";
+
+//Add Languages
+"Add Languages" = "Add Languages";
+
+//YEARS OF PROFESSIONAL EXPERIENCE
+"YEARS OF PROFESSIONAL EXPERIENCE" = "YEARS OF PROFESSIONAL EXPERIENCE";
+"Please enter experience years." = "Please enter experience years.";
+
+//Create user
+"Create user" = "Create user";
+"Please enter primary branch." = "Please enter primary branch.";
+"Please enter your user type." = "Please enter your user type.";
+"Please enter your status." = "Please enter your status.";

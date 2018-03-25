@@ -1,0 +1,51 @@
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "1ob-gc-IRf"; */
+"1ob-gc-IRf.normalTitle" = "SIGN IN";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "G8a-sN-L3G"; */
+"G8a-sN-L3G.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Welcome to Janeous"; ObjectID = "IeQ-Iu-wxi"; */
+"IeQ-Iu-wxi.text" = "Welcome to Janeous";
+
+/* Class = "UITextView"; text = "By using Janeous you accept and agree to the Terms of Service and Privacy Policy."; ObjectID = "V92-7q-s50"; */
+"V92-7q-s50.text" = "By using Janeous you accept and agree to the Terms of Service and Privacy Policy.";
+
+/* Class = "UIButton"; normalTitle = "View Profile"; ObjectID = "WIh-YQ-XE0"; */
+"WIh-YQ-XE0.normalTitle" = "View Profile";
+
+/* Class = "UILabel"; text = "Labwerewrewrel"; ObjectID = "Yp0-30-hxK"; */
+"Yp0-30-hxK.text" = "Labwerewrewrel";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Z2A-Gc-mgj"; */
+"Z2A-Gc-mgj.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "bta-Al-9dM"; */
+"bta-Al-9dM.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Forgot Password?"; ObjectID = "hBB-fa-QDE"; */
+"hBB-fa-QDE.normalTitle" = "Forgot Password?";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "niA-S0-8sQ"; */
+"niA-S0-8sQ.normalTitle" = "SIGN IN";
+
+/* Class = "UILabel"; text = "Sign In"; ObjectID = "st7-Ya-kvE"; */
+"st7-Ya-kvE.text" = "Sign In";
+
+/* Class = "UILabel"; text = "Or Sign In Using"; ObjectID = "t68-47-kaf"; */
+"t68-47-kaf.text" = "Or Sign In Using";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "wO1-Kg-JcJ"; */
+"wO1-Kg-JcJ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN WITH EMAIL"; ObjectID = "xdo-Jl-83k"; */
+"xdo-Jl-83k.normalTitle" = "SIGN IN WITH EMAIL";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "xs5-aM-S8K"; */
+"xs5-aM-S8K.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ySC-mx-eTJ"; */
+"ySC-mx-eTJ.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "SIGN IN"; ObjectID = "zHz-ca-jdL"; */
+"zHz-ca-jdL.normalTitle" = "SIGN IN";

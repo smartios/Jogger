@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Medium.ttf">
+            <string>FiraSans-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdressInfoViewController" customModule="Janeous" customModuleProvider="target">
+            <connections>
+                <outlet property="checkBoxCell" destination="xjz-Su-a4I" id="lpj-A7-0Ku"/>
+                <outlet property="headerLabelCell" destination="aN8-Rc-UKJ" id="VdS-MJ-MeF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="headerLabelCell" rowHeight="66" id="aN8-Rc-UKJ" userLabel="Header Label Cell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aN8-Rc-UKJ" id="Kpj-vf-YQY">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQn-sW-vpN">
+                        <rect key="frame" x="25" y="25" width="325" height="24"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Medium" family="Fira Sans" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LQn-sW-vpN" firstAttribute="leading" secondItem="Kpj-vf-YQY" secondAttribute="leading" constant="25" id="aGE-rd-BT7"/>
+                    <constraint firstAttribute="bottom" secondItem="LQn-sW-vpN" secondAttribute="bottom" constant="20.5" id="aHx-aX-Nrh"/>
+                    <constraint firstItem="LQn-sW-vpN" firstAttribute="top" secondItem="Kpj-vf-YQY" secondAttribute="top" constant="25" id="jz5-c5-P8x"/>
+                    <constraint firstAttribute="trailing" secondItem="LQn-sW-vpN" secondAttribute="trailing" constant="25" id="q0u-yV-haW"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="10.5" y="63.5"/>
+        </tableViewCell>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="checkBoxCell" rowHeight="65" id="xjz-Su-a4I">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xjz-Su-a4I" id="OUs-bf-SyM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REW-6j-gVP">
+                        <rect key="frame" x="25" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="9G7-gV-rao"/>
+                            <constraint firstAttribute="width" constant="40" id="WY8-H0-KhN"/>
+                        </constraints>
+                        <state key="normal" image="checkbox_unselect"/>
+                        <state key="selected" image="checkbox_select"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oBm-0x-ebz" customClass="DefaultTextTitleFormat" customModule="Janeous" customModuleProvider="target">
+                        <rect key="frame" x="57" y="10" width="292" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="REW-6j-gVP" firstAttribute="leading" secondItem="OUs-bf-SyM" secondAttribute="leading" constant="25" id="2oP-Cf-l09"/>
+                    <constraint firstItem="oBm-0x-ebz" firstAttribute="leading" secondItem="OUs-bf-SyM" secondAttribute="leading" constant="57" id="Ezn-5R-R9n"/>
+                    <constraint firstAttribute="bottom" secondItem="REW-6j-gVP" secondAttribute="bottom" constant="9.5" id="Qcv-dK-iLG"/>
+                    <constraint firstAttribute="bottom" secondItem="oBm-0x-ebz" secondAttribute="bottom" constant="10.5" id="UuC-Vr-ljv"/>
+                    <constraint firstAttribute="trailing" secondItem="oBm-0x-ebz" secondAttribute="trailing" constant="26" id="XOt-Yz-fHv"/>
+                    <constraint firstItem="REW-6j-gVP" firstAttribute="top" secondItem="OUs-bf-SyM" secondAttribute="top" constant="10" id="ftQ-wx-iMI"/>
+                    <constraint firstItem="oBm-0x-ebz" firstAttribute="top" secondItem="OUs-bf-SyM" secondAttribute="top" constant="10" id="lgm-7P-CLg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="11" y="-84"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_select" width="20" height="20"/>
+        <image name="checkbox_unselect" width="20" height="20"/>
+    </resources>
+</document>
